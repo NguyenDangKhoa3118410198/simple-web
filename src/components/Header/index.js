@@ -1,21 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './header.css';
 
 function Header() {
   return (
     <header>
-      <nav
-        style={{
-          display: 'flex',
-          gap: '1rem',
-          justifyContent: 'center',
-          height: '80px',
-          width: '100%',
-          backgroundColor: 'lightcyan',
-        }}
-      >
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+      <nav className="header-wrapper">
+        <Link to="/" className="header-link">
+          Home
+        </Link>
+        <Link to="/about" className="header-link">
+          About
+        </Link>
       </nav>
     </header>
   );

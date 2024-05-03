@@ -1,0 +1,13 @@
+.header-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  background-color: lightcyan;
+  align-items: center;
+}
+
+.header-link {
+  text-decoration: none;
+}
