@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
 
-function MainLayout({ children }) {
+interface ILayoutContent {
+  children: React.ReactNode;
+}
+
+const MainLayout: FC<ILayoutContent> = ({ children }) => {
   return (
     <>
       <Header />
@@ -10,6 +14,6 @@ function MainLayout({ children }) {
       <Footer />
     </>
   );
-}
+};
 
 export default MainLayout;
